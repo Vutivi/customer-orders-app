@@ -30,6 +30,8 @@ Rails.application.configure do
   config.assets.compile = false
   config.serve_static_assets=false
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
+  
+  Rails.application.config.assets.precompile += %w( Chart.bundle.js )
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.action_controller.asset_host = 'http://assets.example.com'
