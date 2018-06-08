@@ -10,7 +10,7 @@
   </div>
   <div class="col-xs-6">
     <h3>Orders Per Month</h3>
-     <%= pie_chart @orders.group_by_month(:OrderDate, format: "%b %Y").count, discrete: true %>
+     <%= pie_chart @orders.group_by_month(:orderdate, format: "%b %Y").count, discrete: true %>
   </div>
 </div>
 <div class="row">
