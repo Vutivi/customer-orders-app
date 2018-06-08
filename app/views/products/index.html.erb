@@ -31,9 +31,9 @@
         <td><%= product.UnitsOnOrder %></td>
         <td><%= product.ReorderLevel %></td>
         <td><%= product.Discontinued %></td>
-        <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', product, class: "btn btn-lg btn-primary" %></td>
+        <td><%= link_to 'Edit', edit_product_path(product), class: "btn btn-lg btn-warning" %></td>
+        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?'}, class: "btn btn-lg btn-danger" %></td>
       </tr>
     <% end %>
   </tbody>

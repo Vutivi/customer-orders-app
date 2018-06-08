@@ -1,2 +1,8 @@
 scaffold -c -p ~/path_to_rails_app/db/schema.rb(creating models from existing database)
 pg_dump --no-acl --no-owner -h localhost -U postgres customer-orders-app-db | heroku pg:psql(Migrating database immidiately to Heroku without creating dumps.)
+
+on production.rb add following lines:
+config.assets.compile = true
+config.assets.precompile =  ['*.js', '*.css', '*.css.erb'] 
+then run RAILS_ENV=production bundle exec rake assets:precompile to allow run on production.
+

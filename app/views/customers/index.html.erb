@@ -33,9 +33,9 @@
         <td><%= customer.Country %></td>
         <td><%= customer.Phone %></td>
         <td><%= customer.Fax %></td>
-        <td><%= link_to 'Show', customer %></td>
-        <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
-        <td><%= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', customer, class: "btn btn-lg btn-primary" %></td>
+        <td><%= link_to 'Edit', edit_customer_path(customer), class: "btn btn-lg btn-warning" %></td>
+        <td><%= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-lg btn-danger" %></td>
       </tr>
     <% end %>
   </tbody>
