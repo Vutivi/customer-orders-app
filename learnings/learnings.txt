@@ -1,0 +1,1 @@
+scaffold -c -p ~/path_to_rails_app/db/schema.rb(creating models from existing database)
