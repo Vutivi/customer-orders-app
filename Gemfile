@@ -63,3 +63,5 @@ gem 'active_median', '~> 0.1.0'
 
 #bootstrap
 gem 'bootstrap-sass', '3.3.7'
+
+gem 'rails_12factor', group: :production
