@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Employees</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Lastname</th>
+      <th>Firstname</th>
+      <th>Title</th>
+      <th>Titleofcourtesy</th>
+      <th>Birthdate</th>
+      <th>Hiredate</th>
+      <th>Address</th>
+      <th>City</th>
+      <th>Region</th>
+      <th>Postalcode</th>
+      <th>Country</th>
+      <th>Homephone</th>
+      <th>Extension</th>
+      <th>Photo</th>
+      <th>Notes</th>
+      <th>Reportsto</th>
+      <th>Photopath</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @employees.each do |employee| %>
+      <tr>
+        <td><%= employee.LastName %></td>
+        <td><%= employee.FirstName %></td>
+        <td><%= employee.Title %></td>
+        <td><%= employee.TitleOfCourtesy %></td>
+        <td><%= employee.BirthDate %></td>
+        <td><%= employee.HireDate %></td>
+        <td><%= employee.Address %></td>
+        <td><%= employee.City %></td>
+        <td><%= employee.Region %></td>
+        <td><%= employee.PostalCode %></td>
+        <td><%= employee.Country %></td>
+        <td><%= employee.HomePhone %></td>
+        <td><%= employee.Extension %></td>
+        <td><%= employee.Photo %></td>
+        <td><%= employee.Notes %></td>
+        <td><%= employee.ReportsTo %></td>
+        <td><%= employee.PhotoPath %></td>
+        <td><%= link_to 'Show', employee %></td>
+        <td><%= link_to 'Edit', edit_employee_path(employee) %></td>
+        <td><%= link_to 'Destroy', employee, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Employee', new_employee_path %>

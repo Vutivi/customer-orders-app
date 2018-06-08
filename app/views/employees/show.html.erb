@@ -1,0 +1,89 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @employee.LastName %>
+</p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @employee.FirstName %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @employee.Title %>
+</p>
+
+<p>
+  <strong>Titleofcourtesy:</strong>
+  <%= @employee.TitleOfCourtesy %>
+</p>
+
+<p>
+  <strong>Birthdate:</strong>
+  <%= @employee.BirthDate %>
+</p>
+
+<p>
+  <strong>Hiredate:</strong>
+  <%= @employee.HireDate %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @employee.Address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @employee.City %>
+</p>
+
+<p>
+  <strong>Region:</strong>
+  <%= @employee.Region %>
+</p>
+
+<p>
+  <strong>Postalcode:</strong>
+  <%= @employee.PostalCode %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @employee.Country %>
+</p>
+
+<p>
+  <strong>Homephone:</strong>
+  <%= @employee.HomePhone %>
+</p>
+
+<p>
+  <strong>Extension:</strong>
+  <%= @employee.Extension %>
+</p>
+
+<p>
+  <strong>Photo:</strong>
+  <%= @employee.Photo %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @employee.Notes %>
+</p>
+
+<p>
+  <strong>Reportsto:</strong>
+  <%= @employee.ReportsTo %>
+</p>
+
+<p>
+  <strong>Photopath:</strong>
+  <%= @employee.PhotoPath %>
+</p>
+
+<%= link_to 'Edit', edit_employee_path(@employee) %> |
+<%= link_to 'Back', employees_path %>

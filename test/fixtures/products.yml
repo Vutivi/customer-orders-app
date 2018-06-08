@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ProductName: MyString
+  SupplierId: 1
+  CategoryId: 1
+  QuantityPerUnit: MyString
+  UnitPrice: 9.99
+  UnitsInStock: 1
+  UnitsOnOrder: 1
+  ReorderLevel: 1
+  Discontinued: 1
+
+two:
+  ProductName: MyString
+  SupplierId: 1
+  CategoryId: 1
+  QuantityPerUnit: MyString
+  UnitPrice: 9.99
+  UnitsInStock: 1
+  UnitsOnOrder: 1
+  ReorderLevel: 1
+  Discontinued: 1

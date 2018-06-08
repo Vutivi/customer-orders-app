@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+<div class="col-md-12">
+<h1>Orders</h1>
+<br>
+<div class="table-responsive">
+<table class="table">
+  <thead>
+    <tr class="heading">
+      <th>Customerid</th>
+      <th>Employeeid</th>
+      <th>Orderdate</th>
+      <th>Requireddate</th>
+      <th>Shippeddate</th>
+      <th>Shipvia</th>
+      <th>Freight</th>
+      <th>Shipname</th>
+      <th>Shipaddress</th>
+      <th>Shipcity</th>
+      <th>Shipregion</th>
+      <th>Shippostalcode</th>
+      <th>Shipcountry</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @orders.each do |order| %>
+      <tr class="table-condensed">
+        <td><%= order.CustomerId %></td>
+        <td><%= order.EmployeeId %></td>
+        <td><%= order.OrderDate %></td>
+        <td><%= order.RequiredDate %></td>
+        <td><%= order.ShippedDate %></td>
+        <td><%= order.ShipVia %></td>
+        <td><%= order.Freight %></td>
+        <td><%= order.ShipName %></td>
+        <td><%= order.ShipAddress %></td>
+        <td><%= order.ShipCity %></td>
+        <td><%= order.ShipRegion %></td>
+        <td><%= order.ShipPostalCode %></td>
+        <td><%= order.ShipCountry %></td>
+        <td><%= link_to 'Show', order %></td>
+        <td><%= link_to 'Edit', edit_order_path(order) %></td>
+        <td><%= link_to 'Destroy', order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+</div>
+
+<br>
+
+<%= link_to 'New Order', new_order_path %>

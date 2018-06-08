@@ -1,0 +1,82 @@
+<%= form_with(model: order, local: true) do |form| %>
+  <% if order.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(order.errors.count, "error") %> prohibited this order from being saved:</h2>
+
+      <ul>
+      <% order.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :CustomerId %>
+    <%= form.text_field :CustomerId %>
+  </div>
+
+  <div class="field">
+    <%= form.label :EmployeeId %>
+    <%= form.number_field :EmployeeId %>
+  </div>
+
+  <div class="field">
+    <%= form.label :OrderDate %>
+    <%= form.text_field :OrderDate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :RequiredDate %>
+    <%= form.text_field :RequiredDate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ShippedDate %>
+    <%= form.text_field :ShippedDate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ShipVia %>
+    <%= form.number_field :ShipVia %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Freight %>
+    <%= form.text_field :Freight %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ShipName %>
+    <%= form.text_field :ShipName %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ShipAddress %>
+    <%= form.text_field :ShipAddress %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ShipCity %>
+    <%= form.text_field :ShipCity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ShipRegion %>
+    <%= form.text_field :ShipRegion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ShipPostalCode %>
+    <%= form.text_field :ShipPostalCode %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ShipCountry %>
+    <%= form.text_field :ShipCountry %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

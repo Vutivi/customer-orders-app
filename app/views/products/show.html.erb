@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Productname:</strong>
+  <%= @product.ProductName %>
+</p>
+
+<p>
+  <strong>Supplierid:</strong>
+  <%= @product.SupplierId %>
+</p>
+
+<p>
+  <strong>Categoryid:</strong>
+  <%= @product.CategoryId %>
+</p>
+
+<p>
+  <strong>Quantityperunit:</strong>
+  <%= @product.QuantityPerUnit %>
+</p>
+
+<p>
+  <strong>Unitprice:</strong>
+  <%= @product.UnitPrice %>
+</p>
+
+<p>
+  <strong>Unitsinstock:</strong>
+  <%= @product.UnitsInStock %>
+</p>
+
+<p>
+  <strong>Unitsonorder:</strong>
+  <%= @product.UnitsOnOrder %>
+</p>
+
+<p>
+  <strong>Reorderlevel:</strong>
+  <%= @product.ReorderLevel %>
+</p>
+
+<p>
+  <strong>Discontinued:</strong>
+  <%= @product.Discontinued %>
+</p>
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>

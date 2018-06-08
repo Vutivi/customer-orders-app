@@ -1,0 +1,62 @@
+<%= form_with(model: product, local: true) do |form| %>
+  <% if product.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(product.errors.count, "error") %> prohibited this product from being saved:</h2>
+
+      <ul>
+      <% product.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :ProductName %>
+    <%= form.text_field :ProductName %>
+  </div>
+
+  <div class="field">
+    <%= form.label :SupplierId %>
+    <%= form.number_field :SupplierId %>
+  </div>
+
+  <div class="field">
+    <%= form.label :CategoryId %>
+    <%= form.number_field :CategoryId %>
+  </div>
+
+  <div class="field">
+    <%= form.label :QuantityPerUnit %>
+    <%= form.text_field :QuantityPerUnit %>
+  </div>
+
+  <div class="field">
+    <%= form.label :UnitPrice %>
+    <%= form.text_field :UnitPrice %>
+  </div>
+
+  <div class="field">
+    <%= form.label :UnitsInStock %>
+    <%= form.number_field :UnitsInStock %>
+  </div>
+
+  <div class="field">
+    <%= form.label :UnitsOnOrder %>
+    <%= form.number_field :UnitsOnOrder %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ReorderLevel %>
+    <%= form.number_field :ReorderLevel %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Discontinued %>
+    <%= form.number_field :Discontinued %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

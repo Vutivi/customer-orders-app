@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Customerid:</strong>
+  <%= @order.CustomerId %>
+</p>
+
+<p>
+  <strong>Employeeid:</strong>
+  <%= @order.EmployeeId %>
+</p>
+
+<p>
+  <strong>Orderdate:</strong>
+  <%= @order.OrderDate %>
+</p>
+
+<p>
+  <strong>Requireddate:</strong>
+  <%= @order.RequiredDate %>
+</p>
+
+<p>
+  <strong>Shippeddate:</strong>
+  <%= @order.ShippedDate %>
+</p>
+
+<p>
+  <strong>Shipvia:</strong>
+  <%= @order.ShipVia %>
+</p>
+
+<p>
+  <strong>Freight:</strong>
+  <%= @order.Freight %>
+</p>
+
+<p>
+  <strong>Shipname:</strong>
+  <%= @order.ShipName %>
+</p>
+
+<p>
+  <strong>Shipaddress:</strong>
+  <%= @order.ShipAddress %>
+</p>
+
+<p>
+  <strong>Shipcity:</strong>
+  <%= @order.ShipCity %>
+</p>
+
+<p>
+  <strong>Shipregion:</strong>
+  <%= @order.ShipRegion %>
+</p>
+
+<p>
+  <strong>Shippostalcode:</strong>
+  <%= @order.ShipPostalCode %>
+</p>
+
+<p>
+  <strong>Shipcountry:</strong>
+  <%= @order.ShipCountry %>
+</p>
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>

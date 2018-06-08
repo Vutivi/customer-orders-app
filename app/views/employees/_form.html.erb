@@ -1,0 +1,102 @@
+<%= form_with(model: employee, local: true) do |form| %>
+  <% if employee.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(employee.errors.count, "error") %> prohibited this employee from being saved:</h2>
+
+      <ul>
+      <% employee.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :LastName %>
+    <%= form.text_field :LastName %>
+  </div>
+
+  <div class="field">
+    <%= form.label :FirstName %>
+    <%= form.text_field :FirstName %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Title %>
+    <%= form.text_field :Title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :TitleOfCourtesy %>
+    <%= form.text_field :TitleOfCourtesy %>
+  </div>
+
+  <div class="field">
+    <%= form.label :BirthDate %>
+    <%= form.text_field :BirthDate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :HireDate %>
+    <%= form.text_field :HireDate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Address %>
+    <%= form.text_field :Address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :City %>
+    <%= form.text_field :City %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Region %>
+    <%= form.text_field :Region %>
+  </div>
+
+  <div class="field">
+    <%= form.label :PostalCode %>
+    <%= form.text_field :PostalCode %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Country %>
+    <%= form.text_field :Country %>
+  </div>
+
+  <div class="field">
+    <%= form.label :HomePhone %>
+    <%= form.text_field :HomePhone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Extension %>
+    <%= form.text_field :Extension %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Photo %>
+    <%= form.text_field :Photo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Notes %>
+    <%= form.text_field :Notes %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ReportsTo %>
+    <%= form.number_field :ReportsTo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :PhotoPath %>
+    <%= form.text_field :PhotoPath %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

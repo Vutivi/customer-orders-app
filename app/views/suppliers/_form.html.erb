@@ -1,0 +1,72 @@
+<%= form_with(model: supplier, local: true) do |form| %>
+  <% if supplier.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(supplier.errors.count, "error") %> prohibited this supplier from being saved:</h2>
+
+      <ul>
+      <% supplier.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :CompanyName %>
+    <%= form.text_field :CompanyName %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ContactName %>
+    <%= form.text_field :ContactName %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ContactTitle %>
+    <%= form.text_field :ContactTitle %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Address %>
+    <%= form.text_field :Address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :City %>
+    <%= form.text_field :City %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Region %>
+    <%= form.text_field :Region %>
+  </div>
+
+  <div class="field">
+    <%= form.label :PostalCode %>
+    <%= form.text_field :PostalCode %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Country %>
+    <%= form.text_field :Country %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Phone %>
+    <%= form.text_field :Phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Fax %>
+    <%= form.text_field :Fax %>
+  </div>
+
+  <div class="field">
+    <%= form.label :HomePage %>
+    <%= form.text_field :HomePage %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
