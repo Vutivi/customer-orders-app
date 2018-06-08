@@ -6,3 +6,4 @@ config.assets.compile = true
 config.assets.precompile =  ['*.js', '*.css', '*.css.erb'] 
 then run RAILS_ENV=production bundle exec rake assets:precompile to allow run on production.
 
+or run gem 'rails_12factor', group: :production
