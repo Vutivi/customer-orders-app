@@ -65,3 +65,5 @@ gem 'active_median', '~> 0.1.0'
 gem 'bootstrap-sass', '3.3.7'
 
 gem 'rails_12factor', group: :production
+
+gem 'jquery-rails'
