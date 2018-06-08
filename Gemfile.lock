@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/ankane/groupdate
+  revision: f4ae0040444b4a14c2c8ca510a15849ee4945398
+  specs:
+    groupdate (4.0.1)
+      activesupport (>= 4.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -24,6 +31,8 @@ GEM
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.3)
+    active_median (0.1.4)
+      activerecord
     activejob (5.2.0)
       activesupport (= 5.2.0)
       globalid (>= 0.3.6)
@@ -59,6 +68,7 @@ GEM
       rack (>= 1.6.0)
       rack-test (>= 0.6.3)
       xpath (~> 3.1)
+    chartkick (1.2.5)
     childprocess (0.9.0)
       ffi (~> 1.0, >= 1.0.11)
     chromedriver-helper (1.2.0)
@@ -185,12 +195,15 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  active_median (~> 0.1.0)
   bootsnap (>= 1.1.0)
   byebug
   capybara (>= 2.15, < 4.0)
+  chartkick (~> 1.2.4)
   chromedriver-helper
   coffee-rails (~> 4.2)
   duktape
+  groupdate!
   jbuilder (~> 2.5)
   pg (>= 0.18, < 2.0)
   puma (~> 3.11)

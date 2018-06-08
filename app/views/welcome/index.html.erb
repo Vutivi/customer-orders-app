@@ -6,11 +6,21 @@
   <!-- Line Chart - Single Series -->
   <div class="col-xs-6">
     <h3>Orders Per Customer</h3>
-    
+	 <%= line_chart @orders.group(:CustomerId).count, discrete: true %>
   </div>
   <div class="col-xs-6">
     <h3>Orders Per Month</h3>
-    
+     <%= pie_chart @orders.group_by_month(:OrderDate, format: "%b %Y").count, discrete: true %>
   </div>
-
+</div>
+<div class="row">
+  <!-- Line Chart - Single Series -->
+  <div class="col-xs-6">
+    <h3>Orders Per Employee</h3>
+	 <%= pie_chart @orders.group(:EmployeeId).count, discrete: true %>
+  </div>
+  <div class="col-xs-6">
+    <h3>Orders by Region</h3>
+     <%= column_chart @orders.group(:ShipRegion).count, discrete: true %>
+  </div>
 </div>
