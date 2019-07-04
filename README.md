@@ -13,7 +13,8 @@ Configuration
 * cd customer-orders-app
 * bundle
 * rake db:create
-* rake db:migrate
+* pg_restore --verbose --clean --no-acl --no-owner -h localhost -U youruser -d 
+         yourdbname latest.dump
 * rails s
 
 The app is available on heroku on the following link: https://customer-metrics-app.herokuapp.com/
