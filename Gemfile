@@ -57,7 +57,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #Reports germ files
-gem 'chartkick', '~> 2.3.4'
+gem 'chartkick', '~> 3.4.0'
 gem 'groupdate', git:'https://github.com/ankane/groupdate'
 gem 'active_median', '~> 0.1.0'
 
